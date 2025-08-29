@@ -1,0 +1,34 @@
+#!/bin/bash
+# Example script to set up Jira environment variables
+# Customize these values for your Jira instance
+
+# ============================================
+# JIRA ENVIRONMENT VARIABLE SETUP
+# ============================================
+
+# Your Jira instance URL (replace with your actual URL)
+export JIRA_URL=""
+
+# Your Jira username/email (replace with your actual username)
+export JIRA_USERNAME=""
+
+# Your Jira API token (replace with your actual token)
+# Get your token at: https://id.atlassian.com/manage-profile/security/api-tokens
+export JIRA_API_TOKEN=""
+
+# Board filter for option 4 (required)
+# Set this to filter boards by a specific substring in their names
+export JIRA_BOARD_FILTER="oadp"
+
+echo "🔐 Jira environment variables set:"
+echo "   JIRA_URL: $JIRA_URL"
+echo "   JIRA_USERNAME: $JIRA_USERNAME"
+echo "   JIRA_API_TOKEN: [hidden]"
+echo "   JIRA_BOARD_FILTER: $JIRA_BOARD_FILTER"
+echo ""
+echo "✅ Ready to run: python3 delete_jira_filters.py"
+echo ""
+echo "💡 To make these permanent, add the export commands to your:"
+echo "   - ~/.bashrc (for bash)"
+echo "   - ~/.zshrc (for zsh)" 
+echo "   - or your shell's configuration file"
