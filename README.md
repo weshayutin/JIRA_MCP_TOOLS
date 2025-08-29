@@ -2,9 +2,19 @@
 
 Simple command-line tools for managing JIRA filters and boards.
 
+📱 **Mac users**: See [README_MAC.md](README_MAC.md) for detailed macOS setup instructions with Homebrew.
+
 ## Quick Start
 
-### 1. Setup Environment Variables
+### 1. Install Dependencies
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Setup Environment Variables
 
 Copy the example environment file and customize it with your JIRA credentials:
 
@@ -22,7 +32,7 @@ Then source the environment file:
 source setup_jira_env.sh
 ```
 
-### 2. Test Your Authentication
+### 3. Test Your Authentication
 
 Verify your JIRA connection works:
 
@@ -32,7 +42,7 @@ python3 test_redhat_jira.py
 
 This will test different authentication methods and confirm your credentials are working.
 
-### 3. Use the Tools
+### 4. Use the Tools
 
 #### Delete JIRA Filters
 List and delete your JIRA filters using range selection:
@@ -67,7 +77,7 @@ Both tools support flexible range selection:
 ## Requirements
 
 - Python 3.x
-- `requests` library: `pip install requests`
+- Install dependencies: `pip install -r requirements.txt`
 - JIRA Personal Access Token (get from your JIRA profile settings)
 
 ## Notes
